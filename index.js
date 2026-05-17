@@ -207,9 +207,11 @@ const createAndAppendInfo = (info) =>{
     cardEl.classList.add("card","border-info","mb-3","m-3");
     cardEl.style.width="270px";
 
+    cardEl.id=infoId;    //to remove card after deletion
+
     let cardBodyEl = document.createElement("div");
     cardBodyEl.classList.add("card-body");
-    cardBodyEl.id=infoId;
+   
     // cardContEl.appendChild(cardBodyEl);
 
     //fucntion call to create card for each user
